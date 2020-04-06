@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Parked Car Tracker",
+    "slug": "parked-car-tracker",
+    "description": "Track the Parking Location of your car via GPS or Image taken of the location",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "owner": "SanchitB23",
+    "primaryColor": "#F2494E",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/LogoRed.png",
+    "splash": {
+      "image": "./assets/Splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#E4E4E4"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 10
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses the your location to navigate you to your vehicle."
+      },
+      "config": {
+        "googleMapsApiKey": ""
+      }
+    },
+    "android": {
+      "package": "com.sanchitb23.carparktrack",
+      "versionCode": 2,
+      "splash": {
+        "backgroundColor": "#E4E4E4",
+        "mdpi": "./assets/drawable-mdpi/SplashScreen.png",
+        "hdpi": "./assets/drawable-hdpi/SplashScreen.png",
+        "xhdpi": "./assets/drawable-xhdpi/SplashScreen.png",
+        "xxhdpi": "./assets/drawable-xxhdpi/SplashScreen.png",
+        "xxxhdpi": "./assets/drawable-xxxhdpi/SplashScreen.png"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": ""
+        }
+      }
+    }
+  }
+}
